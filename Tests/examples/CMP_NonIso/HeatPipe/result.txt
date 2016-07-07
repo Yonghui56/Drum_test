@@ -1,0 +1,1191 @@
+
+          ###################################################
+          ##                                               ##
+          ##              OpenGeoSys-Project 6             ##
+          ##                powered by LIS                 ##
+          ##                                               ##
+          ##   Contributors                                ##
+          ##   * Helmholtz Centre for Environmental        ##
+          ##     Research - UFZ                            ##
+          ##   * TU Dresden                                ##
+          ##   * University of Kiel                        ##
+          ##   * University of Edinburgh                   ##
+          ##   * University of Tuebingen (ZAG)             ##
+          ##   * Federal Institute for Geosciences         ##
+          ##     and Natural Resources (BGR)               ##
+          ##   * Helmholtz Centre Potsdam GFZ              ##
+          ##     German Research Centre for Geosciences    ##
+          ##                                               ##
+          ##   Program version                             ##
+          ##   * Version: 0.1.0(NW)                        ##
+          ##   * Date   : 05.07.2012                       ##
+          ##                                               ##
+          ###################################################
+
+
+->Parsing input arguments
+* project path     : HeatPipe_2D
+* output directory : 
+->Reading a property file...
+->Reading OGS5 input files...
+-------------------------------------------------
+PCSRead ... done, read 1 processes
+MFPRead ... done, read 2 fluid properties
+MSPRead ... done, read 1 solid properties
+MMPRead ... done, read 1 medium properties
+CPRead
+BCRead ... done, read 3 boundary conditions
+STRead ... done, read 1 source terms
+ICRead ... done, read 3 initial conditions
+OUTRead ... done, read 1 output settings
+TIMRead ... done, read 1 time stepping properties
+NUMRead ... done, read 1 numeric properties
+GEOLIB::readGLIFile open stream from file HeatPipe_2D.gli ... done
+read points from stream ...  ok, 4 points read
+read polylines from stream ...  ok, 3 polylines read
+MSHRead:  ASCII file
+-------------------------------------------------
+->Constructing meshes... 1 mesh loaded
+-> calculate mesh geometric properties
+* min. edge length = 0.040000
+->mesh id 0: dim=2, nodes=246, elements=200
+->Generating coupling system...
+->Initializing all processes...
+PCS 0: name=CMP_NonIso_TotalDensityForm, type=CMP_NonIso_TotalDensityForm (IN=0, OUT=3)
+* OUT 0: MEAN_PRESSURE
+* OUT 1: TOTAL_MASS_DENSITY
+* OUT 2: TEMPERATURE
+->setting up a solution algorithm SingleStepFEM
+* Variable 0: name=MEAN_PRESSURE, order=1, n_dof=246
+* Variable 1: name=TOTAL_MASS_DENSITY, order=1, n_dof=246
+* Variable 2: name=TEMPERATURE, order=1, n_dof=246
+* Total number of DoFs = 738
+->Setting up a solution algorithm for CMP_NonIso_TotalDensityForm problem.
+* Variable 0: name=MEAN_PRESSURE, order=1, n_dof=246
+* Variable 1: name=TOTAL_MASS_DENSITY, order=1, n_dof=246
+* Variable 2: name=TEMPERATURE, order=1, n_dof=246
+* Total number of DoFs = 738
+->Setting time stepping...
+->Outputting the initial values...
+Writing results...: HeatPipe_2D_0.vtu
+->Simulation is ready! start=0.000000, end=864000000.000000
+
+#############################################################
+Time step 1: t=1.000000 s, dt=1.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_NonIso_TotalDensityForm...
+--Solving nonlinear equation for the CMP_NonIso_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=4.000e+000, ||dx||_inf=0.000e+000, ||x||_inf=1.013e+005, ||dx||/||x||=0.000e+000
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : BiCGSTAB 4
+precon    : ILU(0)
+storage   : CRS
+lis_solve : LIS_MAXITER(code=4)
+
+	 iteration: 1001/1000
+	 residuals: -1.#IND00e+000
+------------------------------------------------------------------
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+
+Solving local EOS problem does not converge! 
+ Using old values as seoncdary varibales. 
+

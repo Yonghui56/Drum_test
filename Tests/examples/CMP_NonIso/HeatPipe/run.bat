@@ -1,0 +1,1 @@
+ogs6.exe -i HeatPipe_2D > result.txt

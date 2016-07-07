@@ -1,0 +1,27 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  CMP_NonIso_TotalDensityForm
+$TIME_END
+  864000000.0
+ $TIME_START
+  0.0
+$TIME_CONTROL
+   NEWTON_ADAPTIVE
+ MAX_TIME_STEP
+     10000000
+ MIN_TIME_STEP
+     10000000
+ ITER_TIMES_AND_MULTIPLYER
+   5
+   0    1.6
+   3    1
+   20   0.5
+   40   0.1
+   49   0.01  
+#STOP
+
+
+
+
+
